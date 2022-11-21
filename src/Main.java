@@ -37,11 +37,13 @@ public class Main {
                             break;
                         }
                     }
-
-                    if (!flag)
-                        System.out.println(x + " is a prime number.");
+                case 4:
+                    System.out.println("ENTER THE NUMBER:");
+                    x = sc.nextInt();
+                    if(x % 2 == 0)
+                        System.out.println(x + " is even");
                     else
-                        System.out.println(x + " is not a prime number.");
+                        System.out.println(x + " is odd");
                     break;
                 default:
                     System.out.println("Invalid choice...Please Enter other choice... ");
