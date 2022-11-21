@@ -57,6 +57,9 @@ public class Main {
                     }
                     System.out.println("The reverse of the given number is: " + rev);
                     break;
+                case 6:
+                    System.out.println("Exiting...");
+                    break;
                 default:
                     System.out.println("Invalid choice...Please Enter other choice... ");
                     break;
