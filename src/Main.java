@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int c,x,y,z,temp,largest;
+        int c,x,y,z,temp,largest,smallest;
         Scanner sc=new Scanner(System.in);
         do {
             System.out.println("MENU\n1.LARGEST OF 3 NUMBERS\n2.SMALLEST OF 3 NUMBERS\n3.PRIME OR NOT\n4.EVEN OR NOT\n5.REVERSE A NUMBER\n6.EXIT");
@@ -17,6 +17,15 @@ public class Main {
                     temp=x>y?x:y;
                     largest=z>temp?z:temp;
                     System.out.println(largest+" is the largest number");
+                    break;
+                case 2:
+                    System.out.println("ENTER 3 NUMBERS:");
+                    x = sc.nextInt();
+                    y = sc.nextInt();
+                    z = sc.nextInt();
+                    temp=x<y?x:y;
+                    smallest=z<temp?z:temp;
+                    System.out.println(smallest+" is the smallest number");
                     break;
                 default:
                     System.out.println("Invalid choice...Please Enter other choice... ");
