@@ -27,6 +27,22 @@ public class Main {
                     smallest=z<temp?z:temp;
                     System.out.println(smallest+" is the smallest number");
                     break;
+                case 3:
+                    System.out.println("ENTER THE NUMBER:");
+                    x = sc.nextInt();
+                    boolean flag = false;
+                    for (int i = 2; i <= x / 2; ++i) {
+                        if (x % i == 0) {
+                            flag = true;
+                            break;
+                        }
+                    }
+
+                    if (!flag)
+                        System.out.println(x + " is a prime number.");
+                    else
+                        System.out.println(x + " is not a prime number.");
+                    break;
                 default:
                     System.out.println("Invalid choice...Please Enter other choice... ");
                     break;
