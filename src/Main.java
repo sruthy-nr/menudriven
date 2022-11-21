@@ -45,6 +45,18 @@ public class Main {
                     else
                         System.out.println(x + " is odd");
                     break;
+                case 5:
+                    System.out.println("ENTER THE NUMBER:");
+                    x = sc.nextInt();
+                    int rev=0;
+                    while(x != 0)
+                    {
+                        int rem = x % 10;
+                        rev = rev * 10 + rem;
+                        x = x/10;
+                    }
+                    System.out.println("The reverse of the given number is: " + rev);
+                    break;
                 default:
                     System.out.println("Invalid choice...Please Enter other choice... ");
                     break;
